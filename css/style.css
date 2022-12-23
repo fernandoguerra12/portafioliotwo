@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@300;400;500;600&display=swap");
+
+/* 
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+ */
+
+:root {
+  --color-white: #ffffff;
+  --color-gris: #f4f5f7;
+  --color-black: #18191e;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3.4rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+/* ***Clase reutilizable */
+.container {
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.btn {
+  padding: 2rem 4rem;
+  background-color: transparent;
+  color: var(--color-white);
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid var(--color-white);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.title__section {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+}
+
+.img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* ? HEADER MENU Y LOGO */
+
+.site-header-bar {
+  padding: 1rem 0;
+}
+
+.site-header-bar .logo {
+  width: 8rem;
+}
+
+.site__header .navbar ul {
+  display: flex;
+  width: 100%;
+}
+
+.site__header .navbar ul li {
+  display: inline-block;
+  margin-right: 3rem;
+}
+
+.site__header .navbar ul li:last-of-type {
+  margin-right: 0;
+}
+
+.site__header .navbar ul li a {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.site__header .site__header-img {
+  height: 100vh;
+  min-height: 60rem;
+  background-image: url(../img/showcase.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.site__header .site__header-img .btn-posicio {
+  margin-top: 50rem;
+}
+
+/* * proyecto */
+.site__project .card__img {
+  flex: 0 0 calc(33.3% - 1rem);
+}
+
+/* *about */
+.site__about {
+  background-color: var(--color-gris);
+}
+.site__about .site__about-exper {
+  flex: 0 0 50%;
+}
+
+.site__about .site__about-exper h3 {
+  font-weight: 600;
+}
+
+.site__about .site__about-exper ul {
+  margin-top: 4rem;
+}
+
+.site__about .site__about-exper ul li {
+  margin-top: 4rem;
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+
+.site__about .site__about-perfil {
+  flex: 0 0 50%;
+}
+
+.site__about .site__about-perfil h3 {
+  font-weight: 400;
+}
+
+.site__about .site__about-perfil p {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.site__contact .card__img {
+  flex: 0 0 calc(33.3% - 1rem);
+  text-align: center;
+}
+
+/* .foooter */
+.site__footer {
+  padding: 2rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
